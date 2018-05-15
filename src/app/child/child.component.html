@@ -1,0 +1,9 @@
+<div [ngClass]="unit">
+  {{info}}
+ <hr>
+  <h2 [style.color]="'green'">Data will ne filled here</h2>
+  <button (click)="changeColor()">ChangeColor</button>
+  <ul><li *ngFor="let n of items">{{n}}</li></ul>
+  <input type="text" [(ngModel)]="current">
+  <button (click)="addItem()">Add {{info}}</button>
+</div>
